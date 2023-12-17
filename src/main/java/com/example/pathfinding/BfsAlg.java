@@ -1,22 +1,18 @@
 package com.example.pathfinding;
 
-import javafx.animation.KeyFrame;
 import javafx.animation.PauseTransition;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
-import javafx.util.Pair;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+
 import java.util.Queue;
 
 public class BfsAlg {
     private static final Duration DELAY_DURATION = Duration.millis(10);
-    private Timeline timeline;
     private Rectangle start;
     private Rectangle stop;
     private ArrayList<ArrayList<Rectangle>> board;
